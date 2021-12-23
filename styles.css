@@ -1,0 +1,12 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(94, 116, 116);
+}
+
+button{
+    padding: 2em 4em;
+}
