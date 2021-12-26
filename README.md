@@ -11,9 +11,9 @@ Hope you like it.
 
 Also you don't forget to install dependencies if needed. 
 Here is a list: 
-   "body-parser": "^1.19.0",[this is not required, you can replace "bodyParser" in line 7 of app.js with "express" and will work the same.]
-   "dotenv": "^10.0.0",
-   "ejs": "^3.1.6",
-   "express": "^4.17.2",
-   "node-fetch": "^3.1.0",
-   "nodemon": "^2.0.15" 
+   "body-parser"[this is not required, you can replace "bodyParser" in line 7 of app.js with "express" and will work the same.], 
+   "dotenv",
+   "ejs",
+   "express",
+   "node-fetch",
+   "nodemon" 
