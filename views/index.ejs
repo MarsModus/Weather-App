@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>Weather App</h1>
+    <form action="/" method="post"></>
+		<input id="cityInput" type="text" name="cityName" placeholder="Enter City Name" required>
+		<button type="submit">Let's See</button>
+	</form>
+
+    <section class="output">
+        <% if(temp !== null) { %>
+            <h2><%= temp + " °C" %></h2>
+        <% } %>
+        <div class="desciption">
+            <% if(icon !== null) { %>
+                <img class="icon" src="http://openweathermap.org/img/wn/<%= icon %>.png">
+                <h3><%= des %></h3>
+            <% } %>
+        </div>
+        <% if(city !== null) { %>
+            <p><%= city %></p>
+        <% } %>    
+    </section>
+</body>
+</html>
