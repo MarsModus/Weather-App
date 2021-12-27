@@ -1,29 +1,131 @@
-*{
-    margin:0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-body{
-    background-color: rgb(94, 116, 116);
-    text-align: center;
-    margin-top:3em;
+body {
+  background: #7fcdcd;
 }
 
-form{
-    margin:3em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:3em;
-}
-input{
-    font-size: 1.7em;
+main {
+  text-align: center;
 }
 
-button{
-    font-size: 1em;
-    font-weight: bolder;
-    padding: 1em 2em;
-    cursor: pointer;
+section.question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2em;
+  background-color: #7fcdcd;
+  color: white;
+  height: 40vh;
+  margin: 5vh 0;
 }
+
+section.question h1 {
+  font-size: 200%;
+  text-shadow: -1px -1px 0 #0072B5, 1px -1px 0 #0072B5, -1px 1px 0 #0072B5, 1px 1px 0 #0072B5;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2em;
+}
+
+form input[type=text] {
+  text-align: center;
+  background-color: #7fcdcd;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-bottom: 2px solid #0072B5;
+  padding: .7em .7em .2em .7em;
+}
+
+form input[type=text]::-webkit-input-placeholder {
+  color: white;
+  font-size: 1.3em;
+}
+
+form input[type=text]:-ms-input-placeholder {
+  color: white;
+  font-size: 1.3em;
+}
+
+form input[type=text]::-ms-input-placeholder {
+  color: white;
+  font-size: 1.3em;
+}
+
+form input[type=text]::placeholder {
+  color: white;
+  font-size: 1.3em;
+}
+
+form input[type=text]:focus {
+  outline: none;
+  background-color: #7fcdcd;
+  color: white;
+}
+
+form button {
+  border: none;
+  border-radius: 7px;
+  background-color: #0072B5;
+  color: white;
+  font-weight: bolder;
+  padding: 1em 2em;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+form button:hover {
+  background-color: #0072B5;
+  border: 2px solid white;
+  cursor: pointer;
+  margin: -2px;
+}
+
+section.answer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2em;
+  height: 50vh;
+  background-color: #0072B5;
+}
+/*# sourceMappingURL=styles.css.map */
