@@ -8,25 +8,30 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <h1>Weather App</h1>
-    <form action="/" method="post"></>
-		<input id="cityInput" type="text" name="cityName" placeholder="Enter City Name" required>
-		<button type="submit">Let's See</button>
-	</form>
-
-    <section class="output">
-        <% if(temp !== null) { %>
-            <h2><%= temp + " °C" %></h2>
-        <% } %>
-        <div class="desciption">
-            <% if(icon !== null) { %>
-                <img class="icon" src="http://openweathermap.org/img/wn/<%= icon %>.png">
-                <h3><%= des %></h3>
+    <main>
+        <section class="question">
+            <h1>Weather App</h1>
+            <form action="/" method="post"></>
+                <input id="cityInput" type="text" name="cityName" placeholder="Enter City Name" required>
+                <button type="submit">Let's See</button>
+            </form>
+        </section>
+        <section class="answer">
+            <% if(city !== null) { %>
+                <p><%= city %></p>
+            <% } %> 
+            
+            <% if(temp !== null) { %>
+                <h2><%= temp + " °C" %></h2>
             <% } %>
-        </div>
-        <% if(city !== null) { %>
-            <p><%= city %></p>
-        <% } %>    
-    </section>
+            
+            <div class="desciption">
+                <% if(icon !== null) { %>
+                    <img class="icon" src="http://openweathermap.org/img/wn/<%= icon %>.png">
+                    <h3><%= des %></h3>
+                <% } %>
+            </div>   
+        </section>
+    </main>
 </body>
 </html>
